@@ -59,8 +59,7 @@ module.exports.update = async (req, res) => {
             {$set: updated},
             {new: true}
         )
-        await category.save()
-        res.status(201).json(category)
+        res.status(200).json(category)
     } catch (e) {
         errorHandler(res, e)
     }
