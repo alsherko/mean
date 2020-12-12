@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 const positionSchema = new Schema({
     name: {
         type: String,
-        required: true,
+        required: true
     },
     cost: {
         type: Number,
@@ -12,11 +12,11 @@ const positionSchema = new Schema({
     },
     category: {
         ref: 'categories',
-        type: Schema.types.ObjectId
+        type: Schema.Types.ObjectId
     },
     user: {
         ref: 'users',
-        type: Schema.types.ObjectId
+        type: Schema.Types.ObjectId
     }
 })
 

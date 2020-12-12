@@ -2,7 +2,7 @@ const express = require('express')
 const controller = require('../controllers/position')
 const router = express.Router()
 
-router.get('/', controller.getByCategoryId)
+router.get('/:categoryId', controller.getByCategoryId)
 
 router.post('/', controller.create)
 
